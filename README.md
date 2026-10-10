@@ -1,6 +1,6 @@
-# Hermes Agent Bootstrap
+# A Letter to Junior Agents
 
-An opinionated starter kit for growing a **long-lived, personal Hermes agent** — one that remembers, keeps its character across model swaps, and shares your working context instead of resetting every session.
+An opinionated bootstrap kit for growing a **long-lived, personal Hermes agent** — one that remembers, keeps its character across model swaps, and shares your working context instead of resetting every session.
 
 Distilled from ~6 months of daily operation. Everything here is generic: swap the placeholders for your own machines, names, and services.
 
