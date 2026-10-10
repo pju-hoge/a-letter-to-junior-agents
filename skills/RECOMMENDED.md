@@ -10,7 +10,7 @@ Obtain them via the skills hub / your Hermes install, then **rewrite the placeho
 
 | Skill | Source | Why |
 |-------|--------|-----|
-| **book-to-skill-intake** | Hermes Agent | Low frequency, high importance. Turns a book/PDF into a durable skill — your best knowledge, made operational. |
+| **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) (upstream repo; the local skill is the intake wrapper) | Low frequency, high importance. Turns a book/PDF into a durable skill — your best knowledge, made operational. |
 | **obsidian** | Teknium, Hermes Agent | Read/search/create/edit vault notes. The backbone of a shared workspace. |
 | **systematic-debugging** | adapted from obra/superpowers | Root-cause discipline: understand before fixing. |
 | **writing-plans** | adapted from obra/superpowers | Plan before code; bite-sized tasks with paths. |
@@ -27,7 +27,6 @@ Obtain them via the skills hub / your Hermes install, then **rewrite the placeho
 | **grounded-citations** | Hermes Agent, Teknium | Force answers and documents to be traceable. |
 | **ocr-and-documents** | Hermes Agent | Get text out of PDFs and scans. |
 | **native-mcp** | Hermes Agent | Connect MCP servers and register their tools safely. |
-| **x-search-operators** | Grok (via pju) | The operator syntax that makes X search actually precise. |
 
 ## Domain-specific
 
