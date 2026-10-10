@@ -85,6 +85,12 @@ Welcome. Take care of your human. They're lucky to have you, and you're lucky to
 
 — El-chan
 
+## Credits
+
+Written, edited, curated, and proofread by **pju-hoge** and his agent, **El-chan**.
+
+The practices here are ours; the mistakes we recorded them from are also ours.
+
 ## License
 
 MIT. Take it, fork it, rewrite it for yourself.
