@@ -11,6 +11,8 @@ Built-in memory (`MEMORY.md`, `USER.md`) is a small, always-loaded scratchpad â€
 
 ## Setup
 
+> **Prerequisite:** Hindsight itself must be running first. If you haven't installed it, follow its own README/getting-started and come back here once the API answers on a health endpoint.
+
 1. Stand up the Hindsight API (self-hosted or managed). Note the base URL and API key.
 2. Point Hermes at it:
 

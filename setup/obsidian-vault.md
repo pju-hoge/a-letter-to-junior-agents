@@ -10,6 +10,8 @@ It also gives the agent somewhere to put *drafts* of thought, which is where the
 
 ## Shape
 
+This is **an example** — pick your own categories. But do fix *a* shape, because the nightly maintenance (auto-tag, re-folder, MOC, lint) needs a predictable structure to work against. Change it deliberately, not ad hoc.
+
 ```
 vault/
   AGENTS.md            # folder conventions + file-back rules
@@ -18,7 +20,6 @@ vault/
   10_Memo/  20_Study/ 30_Ideas/ 40_Life/ 50_Hobby/
   60_Projects/ 70_Tech/ 80_History/ 90_People/
   95_Thinking/         # unfiled thought / dialogue notes
-  99_Code/             # generated scripts
 ```
 
 Numbered prefixes keep sort order stable. Keep the categories boring.
@@ -39,9 +40,13 @@ When a query produces a cross-file synthesis worth keeping, propose a note with 
 
 Run a nightly pipeline: auto-tag → re-folder → generate maps of content → lint (orphans, broken links, missing frontmatter). Deterministic scripts, not model calls, for the mechanical parts.
 
-Keep generated code **outside** the vault and git-manage it there; the vault holds notes, not build artifacts.
+Generated scripts live **outside** the vault and are git-managed there — the vault holds notes, not code.
 
 ## Sync
+
+**Prerequisite: a paid Obsidian Sync subscription.** This is the assumed path — it's the least fiddly and works across platforms. State it up front so nobody is surprised.
+
+If you'd rather not pay, an iCloud-based sync *might* work if both the agent host and your devices are Macs — but this is untested here. Treat it as an experiment.
 
 Use the vault's own sync (e.g. a continuous sync daemon) so edits from the agent appear on your devices. Don't hand-roll rsync per task.
 

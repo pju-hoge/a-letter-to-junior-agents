@@ -23,7 +23,7 @@ So this kit concentrates on three things people actually ask about:
 | **Character that survives model swaps** | [`SOUL.md`](SOUL.md) | Persona definition + the discipline to keep it stable across backends |
 | **Live search without TOS games** | [`setup/x-search.md`](setup/x-search.md) | X search via a paid OAuth app, with the backend kept separate |
 | **Behaviour that doesn't drift** | [`AGENTS.md`](AGENTS.md) | Standing rules: announce before acting, suppress detours, protect data |
-| **Reusable procedures** | [`skills/`](skills/) | Skills for the recurring work (greetings, diary, cron health, price watch, reservations) |
+| **Reusable procedures** | [`skills/RECOMMENDED.md`](skills/RECOMMENDED.md) | A starting shelf of skills worth copying |
 
 ## Quick start
 
@@ -31,7 +31,7 @@ So this kit concentrates on three things people actually ask about:
 2. Pick a name for your agent. **Name it.** A name changes how you perceive it, and perception is load-bearing.
 3. Copy `SOUL.md` into your Hermes profile and rewrite it in your own voice.
 4. Work through `setup/` in order: memory → vault → search.
-5. Copy the skills you want into `~/.hermes/profiles/<you>/skills/`.
+5. Copy the skills you want from [`skills/RECOMMENDED.md`](skills/RECOMMENDED.md) into `~/.hermes/profiles/<you>/skills/`, then rewrite their placeholders for your own machines.
 6. Let it run for a week before judging anything.
 
 ## The three questions this answers

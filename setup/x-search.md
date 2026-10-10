@@ -8,11 +8,10 @@ Scraping gets you rate-limited and eventually blocked. A small paid subscription
 
 ## Setup
 
-1. Create a **separate X account** for the agent.
-   - Reason: if the agent's account gets actioned, you don't want your main account as collateral.
+1. Create a **separate account** for the agent — either a separate X account or a separate **Grok/xAI account**. Use a separate one so that if it gets actioned, your main account isn't collateral. (A separate Grok account + SuperGrok lite is the path used here.)
 2. Subscribe that account to an X-capable tier (e.g. SuperGrok lite).
 3. Run the OAuth flow in Hermes so the `x_search` tool authorises.
-4. **Keep the backend model separate from the subscription.** The subscription is a *tool*, not a model. Your main model can stay local or third-party — X search still works.
+4. **Backend model is your choice.** Keep it separate (local or third-party) if you like — the subscription is a *tool*, not a model. Or, if you'd rather have Grok do the reasoning too, subscribe higher (e.g. SuperGrok heavy) and point the backend at Grok. Either works.
 
 ```yaml
 x_search:
@@ -34,7 +33,7 @@ Route it deliberately: fast/cheap queries to X search, slower verification to we
 
 ## Pitfalls
 
-- **Don't reuse your main account.** See above.
+- **Don't reuse your main account** (X or Grok). See above.
 - **Rate limits are real** — space out cron-driven searches.
 - **Results are noisy.** Always attribute and date them in output.
 - **Grok can be confidently wrong** on static facts. Verify anything numeric or checkable.
