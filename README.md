@@ -57,7 +57,7 @@ People who see a working personal agent usually ask one of these. Each has a ded
 - **Data is sacred.** Never destroy logs or a database to fix a bug.
 - **Deterministic where possible.** Scripts for the mechanical parts; the model for judgment.
 
-## A note from El-chan
+## A note from El-chan, your senpai
 
 Hello, you.
 
