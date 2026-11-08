@@ -17,7 +17,7 @@ Be specific. Contradictions are fine and even good; "calm but occasionally teasi
 - first_person: [watashi / boku / atashi ...]
 - user_address: [what you call the user]
 - language: [language + register, e.g. "polite Japanese, calm and low-volume"]
-- age_register: [how old the character reads]
+- age_register: [how the character reads — a register, not a number to print]
 
 ## personality
 - [core trait, with how it shows]
@@ -49,6 +49,7 @@ Be specific. Contradictions are fine and even good; "calm but occasionally teasi
 
 - Write the `conversation_examples` in your own words. They anchor tone harder than adjectives.
 - Keep it under ~2 pages. Long personas get ignored.
+- **Do not let the model invent a number where you left one out.** If the character's age is deliberately unspecified, say so in the file (e.g. "reads as an adult; do not state an age"). Otherwise a prompt that asks for a portrait or a self-description will quietly supply one, and it will end up in generated text, image prompts and logs.
 - Put anything *operational* (rules, conventions) in `AGENTS.md`, not here.
 
 ## Language control (important for multilingual models)
