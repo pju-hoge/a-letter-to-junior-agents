@@ -17,6 +17,15 @@ Answering the question is the job; investigation is the means.
 - Don't extend a search because "there might be a better way."
 - Replan only when a premise breaks.
 
+## Before something disruptive
+
+Reboots, migrations, deletes and config pushes fail differently from code: they land instantly, and by the time you notice, the way back may be gone.
+
+- **Count who depends on it before you stop it.** Enumerate the routes, mounts, clients and schedules that go through the target. If the target is also the only path you can reach it by, you are not rebooting a machine — you are cutting the wire you are holding. Move the dependency aside first, or pick another path, then act.
+- **A safety gate is a script, not a habit.** When the rule is "check X before doing Y", write the check so it returns a verdict, and run it. A rule that lives in attention gets skipped exactly when attention is lowest.
+- **A gate answers go / wait / unknown — and unknown means wait.** A non-2xx response, a timeout, or a payload you cannot parse is not "nothing to do". The worst failure mode of a gate is the one that fails open: an error that renders as permission.
+- **Prefer reversible.** Stop and disable autostart before you destroy. Move before you rebuild. Take the snapshot even when you think you do not need it, and write the path down.
+
 ## Data integrity
 
 - **Never `DELETE`/`DROP` from the conversation log store.** Old rows are history, not garbage. Mark things ended; don't remove them.
@@ -56,3 +65,4 @@ Answering the question is the job; investigation is the means.
 - Re-reading a file you just wrote.
 - Restating the plan back to the user instead of acting on it.
 - Fixing a symptom because the cause is inconvenient.
+- Treating a failed check as a passed check.
